@@ -7,20 +7,20 @@ class Lhi < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-aarch64-apple-darwin.tar.gz"
-      sha256 "1a93a93c5339667e420beb0112e1b249b216710197f314a87e28f573e8e5db9c"
+      sha256 "b142f7ead9f8fd1d4c728255455173ed5c2c71bc7068b9f514542308a0eb5c63"
     else
       url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-x86_64-apple-darwin.tar.gz"
-      sha256 "8781fae456d88dca3c403e0bef84f86048604dbd245188e5c523ffb202aaefca"
+      sha256 "84949c0989662f6d01624691d38c8ce49815519edb787831c5cb8ab14a44bca9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "beec9779eded2807406827eccff9971bde6de33c71fc04fdfe231a96b49d2e99"
+      sha256 "c1fea9cb917a22288aab8d545308162ba5a11ac53df2fbcf9360d81191523e10"
     else
       url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1921b7d35df569ea34befcda5daf9c81ec61d47bab60a0de23caf5c2119275c7"
+      sha256 "ab591e1549f3a679f0b58eebd16620dcf2b3e94e61c15a9fe1ed7151561a7892"
     end
   end
 
