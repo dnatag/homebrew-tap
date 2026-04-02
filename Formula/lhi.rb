@@ -1,26 +1,26 @@
 class Lhi < Formula
   desc "Local history for your code — like IntelliJ's Local History, but for any editor"
   homepage "https://github.com/dnatag/lhi"
-  version "1.0.1"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-aarch64-apple-darwin.tar.gz"
-      sha256 "608fd42e2ffdef2f260de67bf01d1054c977d23bd034aeb0fd82d48d677d8d44"
+      sha256 "012b364303d569ae8693501a6a728959291a0bbd3fa4128e0e8b8ca9d58f0708"
     else
       url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-x86_64-apple-darwin.tar.gz"
-      sha256 "076414bba6c28a6dc6978105b03774b8f86661c1661571d7ebc3798fb1a0fa66"
+      sha256 "c1026d5e41b6fdaab5a048f44cb493e95ac33a8d0665050aecdbe411c26d7054"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-aarch64-unknown-linux-musl.tar.g"
-      sha256 "fab677b315922b1e1058ef4ab5716b60ee91c85e586969520da76f79e512fe47"
+      sha256 "e23e04ab4d2f9a2b488132377f44135c38180b2288cf349b21169b25c7f02dc8"
     else
       url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-x86_64-unknown-linux-musl.tar.gzz"
-      sha256 "ac03fddad5d5e7e513088cc48dbb34114ef54f4dddc59e33e5b06e7fc773474d"
+      sha256 "381089e383b149d4215cd3ca9c99b5ad8cb2a027aad6c609db6cef6fec9c6dae"
     end
   end
 
