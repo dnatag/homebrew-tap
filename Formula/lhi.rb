@@ -16,10 +16,10 @@ class Lhi < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-aarch64-unknown-linux-musl.tar.g"
+      url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-aarch64-unknown-linux-musl.tar.gz"
       sha256 "e23e04ab4d2f9a2b488132377f44135c38180b2288cf349b21169b25c7f02dc8"
     else
-      url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-x86_64-unknown-linux-musl.tar.gzz"
+      url "https://github.com/dnatag/lhi/releases/download/v#{version}/lhi-x86_64-unknown-linux-musl.tar.gz"
       sha256 "381089e383b149d4215cd3ca9c99b5ad8cb2a027aad6c609db6cef6fec9c6dae"
     end
   end
