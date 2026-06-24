@@ -1,26 +1,26 @@
 class Drawz < Formula
   desc "Rendering guarantee layer between AI agents and terminal display"
   homepage "https://github.com/dnatag/drawz"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dnatag/drawz/releases/download/v#{version}/drawz-aarch64-apple-darwin.tar.gz"
-      sha256 "400f19eb679d8563f7ac790d26e4ff3c064e2dafe239f8ab4111b12d84acb835"
+      sha256 "5fbbbdd108a80c23134dc46fc20ddf297d041c6254700619f3d88794f481df67"
     else
       url "https://github.com/dnatag/drawz/releases/download/v#{version}/drawz-x86_64-apple-darwin.tar.gz"
-      sha256 "4fde44501964a1f315478050044615b290f4fad0e6a2e8c9ea46f1060eaf4c73"
+      sha256 "f5fd17dc8c06c2bbb4d6ef3424dc038e94e71ca825032482a5fd46a9ccf4b86e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/dnatag/drawz/releases/download/v#{version}/drawz-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3ddacfe186c7fe3c522e9743696eee8e0d265f2621777f8eea126b5e97621747"
+      sha256 "7cb2b69b6453f7f776f5d215b28850b9f6f0d07ced25c103089919cc0b895957"
     else
       url "https://github.com/dnatag/drawz/releases/download/v#{version}/drawz-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bf51ccf1fbbadfb50cda2396af76dd9d8a5882d131c8262bce50437618434340"
+      sha256 "a496a0349fd45d6b0d54c0c2a2592304a1729fb4b06108fc2b5cb9646e9be8e2"
     end
   end
 
